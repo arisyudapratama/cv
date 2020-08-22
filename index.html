@@ -8,40 +8,76 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="home">
     <nav class="navbar">
         <div class="logo">
-            <a href="">AYP</a>
+            <a href="#home">AYP</a>
         </div>
         <div class="menu">
-            <a href="">Tentang</a>
-            <a href="">Portfolio</a>
-            <a href="">Kontak</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#portofolio">Portfolio</a>
+            <a href="#kontak">Kontak</a>
         </div>
     </nav>
 
     <div class="container">
-            <section class="header">
-                <img src="img/aris.JPG" alt="Aris">
-                <h1>Aris Yuda Pratama</h1>
-                <h3>Web Developer</h3>
-            </section>
+        <section class="header">
+            <img src="img/aris.JPG" alt="Aris">
+            <h1>Aris Yuda Pratama</h1>
+            <h3>Web Developer</h3>
+        </section>
 
-            <section class="tentang">
-                <h1 class="judul">Tentang</h1>
-                <hr class="garis">
-                <div class="content">
-                    <img src="img/foto_tentang.jpeg" alt="Aris Yuda Pratama">
-                    <p>Nama saya Aris Yuda Pratama lulusan Universitas Muhammdiyah Malang 2020, jurusan Informatika. Saya asal Pasuruan, hobi nonton film, main billiard. Saya sangat suka dengan programming khususnya web programming. Keahlian saya menggunakan bahasa pemograman PHP, menggunakan framework CodeIgniter dan Laravel.</p>
-                </div>
-            </section>
+        <section id="tentang" class="tentang">
+            <h1 class="judul">Tentang</h1>
+            <hr class="garis">
+            <div class="content">
+                <img src="img/foto_tentang.jpeg" alt="Aris Yuda Pratama">
+                <p>Nama saya Aris Yuda Pratama lulusan Universitas Muhammdiyah Malang 2020, jurusan Informatika. Saya
+                    asal Pasuruan, hobi nonton film, main billiard. Saya sangat suka dengan programming khususnya web
+                    programming. Keahlian saya menggunakan bahasa pemograman PHP, menggunakan framework CodeIgniter dan
+                    Laravel.</p>
+            </div>
+        </section>
 
-            <section class="portofolio">
-                <h1 class="judul">Portofolio</h1>
-                <hr class="garis">
-            </section>
+        <section id="portofolio" class="portofolio">
+            <h1 class="judul">Portofolio</h1>
+            <hr class="garis">
+            <ul class="content-porto">
+                <li><img src="img/1.png" alt=""></li>
+                <li><img src="img/2.png" alt=""></li>
+                <li><img src="img/1.png" alt=""></li>
+                <li><img src="img/2.png" alt=""></li>
+            </ul>
+        </section>
 
+        <section id="kontak" class="kontak">
+            <h1 class="judul">Kontak</h1>
+            <hr class="garis">
+
+            <div class="content-kontak">
+                <form action="mailto:arisyp26@gmail.com" method="POST" enctype="text/plain">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="nama">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="pesan">Pesan</label>
+                    <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
+                    <button type="submit">Kirim</button>
+                </form>
+            </div>
+        </section>        
     </div>
+
+    <footer>
+        <div class="sosmed">
+            <ul>
+                <li><a href="https://instagram.com/arisyuda269" target="_blank"><img src="img/instagram.png" alt=""></a></li>
+                <li><a href="https://twitter.com/arisyuda269" target="_blank"><img src="img/twitter.png" alt=""></a></li>
+                <li><a href="https://facebook.com/arisyuda269" target="_blank"><img src="img/facebook.png" alt=""></a></li>
+            </ul>
+        </div>
+        <p>&copy2020 Aris Yuda Pratama</p>
+    </footer>
 
 </body>
 

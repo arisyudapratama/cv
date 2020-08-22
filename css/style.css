@@ -8,7 +8,6 @@ body {
     background-image: url("../img/nice_snow.png");
 }
 
-/* Navbar */
 .navbar {
     background-color: #12a1dd;
     height: 40px;
@@ -42,14 +41,11 @@ body {
     border-radius: 10px;
 }
 
-/* End Navbar */
-
 .container {
     width: 80%;
     margin: 50px auto;
 }
 
-/* Header */
 .header img {
     display: block;
     margin: auto;
@@ -71,17 +67,13 @@ body {
     padding-bottom: 20px;
 }
 
-/* End Header */
-
-/* Tentang */
-.tentang {
+.tentang, .kontak {
     background-color: #12a0dd46;
     box-shadow: 0px 0px 22px 0px rgba(0, 170, 255, 0.5);
     padding: 10px;
 }
 
 .content {
-    /* background-color: blueviolet; */
     display: flex;
     padding-top: 20px;
     align-items: center;
@@ -107,4 +99,74 @@ body {
     width: 180px;
     border-top: 3px solid black;
     margin: auto;
+}
+
+.portofolio ul {
+    padding-top: 20px;
+}
+
+.portofolio img {
+    display: block;
+    width: 100%;
+}
+
+.content-porto {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.portofolio {
+    padding-bottom: 40px;
+}
+
+.content-kontak {
+    width: 50%;
+    margin: auto;
+}
+
+.content-kontak label, .content-kontak input, .content-kontak textarea, .content-kontak button {
+    display: block;
+    /* background-color: brown; */
+    width: 100%;
+    padding: 3px 0;
+    border: none;
+}
+
+.content-kontak button {
+    background-color: rgb(60, 185, 223);    
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 6px;
+    width: 60px;
+}
+
+.content-kontak button:hover {
+    background-color: rgb(49, 88, 100);
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color:#171e20;
+    padding: 10px;
+}
+
+footer ul {
+    list-style: none;
+    width: 40%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;    
+}
+
+footer img {
+    width: 30px;
+}
+
+footer p {
+    text-align: center;
+    color: whitesmoke;
 }
