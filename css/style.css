@@ -26,7 +26,7 @@ body {
     padding-left: 20px;
 }
 
-.logo img {        
+.logo img {
     width: 30px;
 }
 
@@ -45,6 +45,7 @@ body {
 .container {
     width: 80%;
     margin: 50px auto;
+    box-sizing: border-box;
 }
 
 .header img {
@@ -77,24 +78,41 @@ body {
 }
 
 .content {
-    display: flex;
     padding-top: 20px;
     align-items: center;
-    /* background-color: tomato; */
     width: 70%;
     margin: auto;
 }
 
 .content img {
+    position: relative;
     box-shadow: 0px 0px 22px 0px rgba(29, 37, 41, 0.8);
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    z-index: -9;
+    z-index: -1;
+    float: left;
+    shape-outside: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    -webkit-shape-outside: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    margin-right: 10px;
+}
+
+.content::before,
+.content:after {
+    content: " ";
+    display: table;
+    clear: left;
+}
+
+.about {
+    margin-bottom: 50px;
 }
 
 .content p {
-    padding-left: 20px;
+    line-height: 2rem;
+}
 
+.pengalaman span {
+    font-weight: bold;
 }
 
 .judul {
@@ -148,7 +166,7 @@ body {
 
 .content-kontak button {
     background-color: rgb(60, 185, 223);
-    margin-top: 10px;    
+    margin-top: 10px;
     padding: 6px;
 }
 
