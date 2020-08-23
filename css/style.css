@@ -80,6 +80,9 @@ body {
     display: flex;
     padding-top: 20px;
     align-items: center;
+    /* background-color: tomato; */
+    width: 70%;
+    margin: auto;
 }
 
 .content img {
