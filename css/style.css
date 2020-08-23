@@ -117,7 +117,7 @@ body {
 }
 
 .pengalaman p {
-    display: inline;    
+    display: inline;
     line-height: 1.4rem;
 }
 
@@ -279,11 +279,17 @@ footer p {
 
     .tentang {
         position: relative;
-    }    
+    }
 }
 
 @media screen and (min-width: 1230px) and (max-width: 1297px) {
-        .about {
-            margin-bottom: 20px;
-        }
+    .about {
+        margin-bottom: 20px;
     }
+}
+
+@media screen and (max-width: 710px){
+    .content img {
+        visibility: hidden;
+    }
+}
