@@ -63,6 +63,7 @@ body {
 .header h1 {
     font-size: 40px;
     margin-top: 15px;
+    font-family: cursive;
 }
 
 .header h3 {
@@ -73,7 +74,7 @@ body {
 .kontak {
     background-color: #12a0dd46;
     box-shadow: 0px 0px 22px 0px rgba(0, 170, 255, 0.5);
-    padding: 10px;
+    padding: 30px 0;
     border-radius: 10px;
 }
 
@@ -127,6 +128,10 @@ body {
     margin: auto;
 }
 
+.portofolio {
+    padding: 30px 0;
+}
+
 .portofolio ul {
     padding-top: 20px;
 }
@@ -146,6 +151,10 @@ body {
 
 .portofolio {
     padding-bottom: 40px;
+}
+
+.kontak {
+    margin: 30px 0;
 }
 
 .content-kontak {
