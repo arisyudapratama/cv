@@ -279,6 +279,11 @@ footer p {
 
     .tentang {
         position: relative;
-    }
-
+    }    
 }
+
+@media screen and (min-width: 1230px) and (max-width: 1297px) {
+        .about {
+            margin-bottom: 20px;
+        }
+    }
