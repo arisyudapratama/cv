@@ -77,6 +77,7 @@ body {
     box-shadow: 0px 0px 22px 0px rgba(0, 170, 255, 0.5);
     padding: 30px 0;
     border-radius: 10px;
+    margin: 30px 0;
 }
 
 .content {
@@ -161,10 +162,6 @@ body {
 
 .portofolio {
     padding-bottom: 40px;
-}
-
-.kontak {
-    margin: 30px 0;
 }
 
 .content-kontak {
@@ -285,7 +282,7 @@ footer p {
     }
 }
 
-@media screen and (max-width: 710px){
+@media screen and (max-width: 710px) {
     .content img {
         visibility: hidden;
     }
